@@ -1,0 +1,97 @@
+<style>
+  /* Letter Number Styles */
+    .letter-number {
+        width: 85%;
+        margin: 0 auto 11.34px auto;
+        /* 3mm = 11.34px */
+        font-size: 15.96px;
+        /* 12pt = 15.96px */
+        font-family: "Times New Roman", Times, serif;
+        line-height: 1.3;
+    }
+
+    .letter-number table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+
+    .letter-number td:first-child {
+        width: 75.6px;
+        /* 20mm = 75.6px */
+        min-width: 75.6px;
+        white-space: nowrap;
+        padding-right: 15.12px;
+        /* 4mm = 15.12px */
+        vertical-align: top;
+    }
+
+    .letter-number td:nth-child(2) {
+        width: 3.78px;
+        /* 1mm = 3.78px */
+        padding-left: 0;
+        vertical-align: top;
+    }
+
+    .letter-number td:nth-child(3) {
+        padding-left: 9.45px;
+        /* 2.5mm = 9.45px */
+        vertical-align: top;
+        padding-right: 18.9px;
+        /* 5mm = 18.9px */
+    }
+
+    .letter-number td:last-child {
+        text-align: right;
+        white-space: nowrap;
+        vertical-align: top;
+        padding-left: 75.6px;
+        /* 20mm = 75.6px */
+    }
+
+    /* Letter Receiver Styles */
+    .letter-receiver {
+        margin-bottom: 3.78px;
+        /* 1mm = 3.78px */
+    }
+
+    .letter-receiver p {
+        font-size: 15.96px;
+        /* 12pt = 15.96px */
+        padding-left: 128.52px;
+        /* 34mm = 128.52px */
+        margin-top: 1.89px;
+        /* 0.5mm = 1.89px */
+        margin-bottom: 1.89px;
+    }
+
+    .letter-receiver-address {
+        font-weight: bold;
+    }
+</style>
+<div class="letter-number">
+  <table>
+    <tr>
+      <td>Nomor</td>
+      <td>:</td>
+      <td>{{nomorSurat}}</td>
+      <td>Kediri, {{tanggalPembuatan}}</td>
+    </tr>
+    <tr>
+      <td>Lampiran</td>
+      <td>:</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Perihal</td>
+      <td>:</td>
+      <td>{{perihal}}</td>
+      <td></td>
+    </tr>
+  </table>
+</div>
+<div class="letter-receiver">
+  <p>Yth. <b>{{namaPenerima}}</b></p>
+  <p>di-</p>
+  <p class="letter-receiver-address">{{alamatPenerima}}</p>
+</div>

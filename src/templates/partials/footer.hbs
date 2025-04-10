@@ -1,0 +1,171 @@
+{{!-- src/templates/partials/footer.hbs --}}
+<style>
+  .footer {
+    text-align: left;
+    background-color: transparent;
+    width: 100%;
+  }
+
+  .footer-wrapper {
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+  }
+
+  .footer-left {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 100%;
+  }
+
+  .stamp-container {
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  .stamp {
+    max-height: 85px;
+    width: auto;
+  }
+
+  .footer-left p {
+    margin: 1.89px 0;
+    font-size: 10.64px;
+    line-height: 1.5;
+  }
+
+  .footer-left .blue-text {
+    color: #056bb0;
+    font-weight: bold;
+    font-size: 11.97px;
+    margin-bottom: 3.78px;
+  }
+
+  .footer-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 24px;
+  }
+
+  .contact-text {
+    font-size: 10.64px;
+  }
+
+  .footer-contact>div {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 11.97px;
+    margin: 3.78px 0;
+    position: relative;
+  }
+
+  .icon-container {
+    width: 9px;
+    height: 9px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 50%;
+    padding: 3px;
+    border: 1px solid #5f5d5d;
+  }
+
+  .footer-divider {
+    width: 85.5%;
+    height: 1.89px;
+    background-color: #5f5d5d;
+    margin: 11.34px auto;
+  }
+
+  .bottom-frame {
+    width: 100%;
+    height: 30.24px;
+    margin-top: 11.34px;
+    background: linear-gradient(to top,
+        #056bb0 0%,
+        #056bb0 22.68px,
+        #cccccc 22.68px,
+        #cccccc 30.24px);
+  }
+
+  .placeholder {
+    width: 100px;
+    height: 100px;
+    border: 1px dashed #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #999;
+    background-color: #f5f5f5;
+  }
+</style>
+<div class="footer-divider"></div>
+<footer class="footer">
+  <div class="footer-wrapper">
+    <!-- Kolom Kiri -->
+    <div class="footer-left">
+      <p class="blue-text">Sekretariat:</p>
+      <p>Gedung al-Ittihad 1 Lt. 1, Pondok Pesantren Lirboyo</p>
+      <p>PO. Box 162 Lirboyo, Mojoroto, Kota Kediri, Jawa Timur</p>
+      <div class="footer-contact">
+        <div class="contact-item">
+          <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#056bb0" viewBox="0 0 16 16">
+              <path
+                d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z" />
+            </svg>
+          </div>
+          <span class="contact-text">limlirboyo1910@gmail.com</span>
+        </div>
+        <div class="contact-item">
+          <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#056bb0" viewBox="0 0 16 16">
+              <path fill-rule="evenodd"
+                d="M1.885.511a1.745 1.745 0 0 1 2.61.163L6.29 2.98c.329.423.445.974.315 1.494l-.547 2.19a.68.68 0 0 0 .178.643l2.457 2.457a.68.68 0 0 0 .644.178l2.189-.547a1.75 1.75 0 0 1 1.494.315l2.306 1.794c.829.645.905 1.87.163 2.611l-1.034 1.034c-.74.74-1.846 1.065-2.877.702a18.6 18.6 0 0 1-7.01-4.42 18.6 18.6 0 0 1-4.42-7.009c-.362-1.03-.037-2.137.703-2.877z" />
+            </svg>
+          </div>
+          <span class="contact-text">+62 858-4390-8203</span>
+        </div>
+        <div class="contact-item">
+          <div class="icon-container">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="#056bb0" viewBox="0 0 16 16">
+              <path
+                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0M4.882 1.731a.48.48 0 0 0 .14.291.487.487 0 0 1-.126.78l-.291.146a.7.7 0 0 0-.188.135l-.48.48a1 1 0 0 1-1.023.242l-.02-.007a1 1 0 0 0-.462-.04 7 7 0 0 1 2.45-2.027m-3 9.674.86-.216a1 1 0 0 0 .758-.97v-.184a1 1 0 0 1 .445-.832l.04-.026a1 1 0 0 0 .152-1.54L3.121 6.621a.414.414 0 0 1 .542-.624l1.09.818a.5.5 0 0 0 .523.047.5.5 0 0 1 .724.447v.455a.8.8 0 0 0 .131.433l.795 1.192a1 1 0 0 1 .116.238l.73 2.19a1 1 0 0 0 .949.683h.058a1 1 0 0 0 .949-.684l.73-2.189a1 1 0 0 1 .116-.238l.791-1.187A.45.45 0 0 1 11.743 8c.16 0 .306.084.392.218.557.875 1.63 2.282 2.365 2.282l.04-.001a7.003 7.003 0 0 1-12.658.905Z" />
+            </svg>
+          </div>
+          <span class="contact-text">https://lirboyo.net/</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Kolom Kanan -->
+    <div class="footer-right">
+      <div class="stamp-container">
+        {{#if stampBase64}}
+        <img src="data:image/png;base64,{{stampBase64}}" alt="Stempel" class="stamp" />
+        {{else}}
+        <div class="placeholder">[STEMPEL]</div>
+        {{/if}}
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom Frame Border -->
+  <div class="bottom-frame"></div>
+</footer>

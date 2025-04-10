@@ -1,0 +1,31 @@
+{{!-- src/templates/index.hbs --}}
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>{{nomorSurat}} {{perihal}}</title>
+  {{> global-style}}
+</head>
+
+<body>
+  <!-- Header Section (sudah termasuk top-frame) -->
+  {{> header}}
+
+  <main>
+    <!-- Letter Meta Section -->
+    {{> letter-meta}}
+
+    <!-- Letter Content Section -->
+    {{> letter-content}}
+
+    <!-- Sender Signature Section -->
+    {{> sender-signature}}
+  </main>
+
+  <!-- Footer Section (sudah termasuk bottom-frame) -->
+  {{> footer}}
+</body>
+
+</html>

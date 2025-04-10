@@ -1,0 +1,111 @@
+<style>
+  /* Main Content Styles */
+  main {
+    flex: 1;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15.96px;
+    /* 12pt = 15.96px */
+    line-height: 1.3;
+    color: #000000;
+  }
+
+  main h1 {
+    font-size: 15.96px;
+    /* 14pt = 18.62px */
+    padding-left: 105.84px;
+    /* 28mm = 105.84px */
+    margin-bottom: 7.56px;
+    /* 2mm = 7.56px */
+  }
+
+  main p {
+    font-size: 15.96px;
+    /* 12pt = 15.96px */
+    text-align: justify;
+    text-indent: 37.8px;
+    /* 10mm = 37.8px */
+    padding-left: 105.84px;
+    /* 28mm = 105.84px */
+    margin-top: 3.78px;
+    /* 1mm = 3.78px */
+    margin-bottom: 7.56px;
+    /* 2mm = 7.56px */
+  }
+
+  .main-salam {
+    font-style: italic;
+  }
+
+  .main-content {
+    width: 85%;
+    margin: 0 auto;
+  }
+
+  .letter-invitation-date-and-place table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 3.99px;
+    margin-bottom: 3.99px;
+  }
+
+  .letter-invitation-date-and-place td:first-child {
+    width: 39.9px;
+    min-width: 39.9px;
+    white-space: nowrap;
+    padding-right: 26.6px;
+    padding-left: 143.3px;
+    vertical-align: top;
+  }
+
+  .letter-invitation-date-and-place td:nth-child(2) {
+    width: 13.3px;
+    vertical-align: top;
+  }
+
+  .letter-invitation-date-and-place td:nth-child(3) {
+    vertical-align: top;
+  }
+</style>
+<div class="main-content">
+  <h1 class="main-salam">Assalamu'alaikum Warahmatullahi Wabarakatuh.</h1>
+  <p>
+    Salam silaturahim disampaikan, semoga rahmat serta inayah-Nya senantiasa
+    mengiringi segala aktivitas kita. Aamiin.
+  </p>
+  <p>
+    Selanjutnya, atas nama
+    <b>{{tingkatKepengurusan}} Lembaga Ittihadul Muballighin {{daerahKepengurusan}}</b>
+    mengharapkan kehadiran Anda dalam acara
+    <b>{{acara}}</b>
+    yang akan dilaksanakan pada:
+  </p>
+  <div class="letter-invitation-date-and-place">
+    <table>
+      <tr>
+        <td>Hari</td>
+        <td>:</td>
+        <td>{{hari}}</td>
+      </tr>
+      <tr>
+        <td>Tanggal</td>
+        <td>:</td>
+        <td>{{tanggal}}</td>
+      </tr>
+      <tr>
+        <td>Waktu</td>
+        <td>:</td>
+        <td>{{waktu}}</td>
+      </tr>
+      <tr>
+        <td>Tempat</td>
+        <td>:</td>
+        <td>{{tempat}}</td>
+      </tr>
+    </table>
+  </div>
+  <p>
+    Demikian surat undangan ini disampaikan mendahului atas kehadiran Anda
+    dihaturkan banyak terima kasih.
+  </p>
+  <h1 class="main-salam">Wassalamu'alaikum Warahmatullahi Wabarakatuh.</h1>
+</div>

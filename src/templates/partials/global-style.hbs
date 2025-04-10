@@ -1,0 +1,57 @@
+{{!-- src/templates/partials/styles.hbs --}}
+<style>
+
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Nastaliq+Urdu&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+    /* Reset dan Base Styles */
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: "Montserrat", sans-serif;
+        background-color: white;
+        width: 793.8px;
+        /* 210mm = 793.8px */
+        height: 1122.66px;
+        /* 297mm = 1122.66px */
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        box-sizing: border-box;
+        margin: 0 auto;
+        /* Pusatkan di layar */
+    }
+
+    /* Print Settings */
+    @media print {
+        body {
+            width: 793.8px;
+            /* 210mm = 793.8px */
+            height: 1122.66px;
+            /* 297mm = 1122.66px */
+            margin: 0;
+            padding: 0;
+            overflow: visible;
+        }
+
+        @page {
+            size: A4 portrait;
+            margin: 0;
+        }
+
+        main {
+            font-size: 15.96px !important;
+            /* 12pt = 15.96px */
+        }
+    }
+
+    /* Responsive Adjustments */
+    @media screen and (max-width: 794px) {
+        body {
+            width: 100%;
+            height: auto;
+            overflow: auto;
+        }
+    }
+</style>

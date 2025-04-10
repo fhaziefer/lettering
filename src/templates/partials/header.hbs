@@ -1,0 +1,110 @@
+{{!-- src/templates/partials/header.hbs --}}
+<style>
+  /* Header Styles */
+  .header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3.78px;
+    /* 1mm = 3.78px */
+    position: relative;
+    background-color: transparent;
+  }
+
+  .header-logo {
+    width: 105.84px;
+    /* 28mm = 105.84px */
+    height: 117.18px;
+    /* 31mm = 117.18px */
+    margin-top: 11.34px;
+    /* 3mm = 11.34px */
+    margin-right: 18.9px;
+    /* 5mm = 18.9px */
+  }
+
+  .header-text {
+    text-align: center;
+    width: 70%;
+  }
+
+  .arabic-text {
+    font-family: "Noto Nastaliq Urdu", serif;
+    font-size: 21.28px;
+    /* 16pt = 21.28px */
+    color: #056bb0;
+    margin-bottom: 3.78px;
+    /* 1mm = 3.78px */
+    line-height: 1.2;
+  }
+
+  .structure-name {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 18.62px;
+    /* 14pt = 18.62px */
+    color: #5f5d5d;
+    margin-top: 13.23px;
+    /* 3.5mm = 13.23px */
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+
+  .organizations-name {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 700;
+    font-size: 21.28px;
+    /* 16pt = 21.28px */
+    color: #056bb0;
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+
+  .organizations-territory {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 15.96px;
+    /* 12pt = 15.96px */
+    color: #5f5d5d;
+    margin-top: 0;
+    margin-bottom: 0;
+    text-transform: uppercase;
+  }
+
+  .header-divider {
+    width: 85.5%;
+    height: 1.89px;
+    /* 0.5mm = 1.89px */
+    background-color: #5f5d5d;
+    margin: 11.34px auto;
+    /* 3mm = 11.34px */
+  }
+
+  /* Bingkai Atas dan Bawah */
+  .top-frame {
+    width: 100%;
+    height: 30.24px;
+    /* 8mm = 30.24px */
+    background: linear-gradient(to bottom,
+        #056bb0 0%,
+        #056bb0 22.68px,
+        /* 6mm = 22.68px */
+        #cccccc 22.68px,
+        #cccccc 30.24px);
+  }
+</style>
+<div class="top-frame"></div>
+
+<header class="header">
+  {{#if logoBase64}}
+  <img class="header-logo" src="data:image/png;base64,{{logoBase64}}" alt="Logo LIM" />
+  {{else}}
+  <div class="header-logo-placeholder">[LOGO]</div>
+  {{/if}}
+  <div class="header-text">
+    <p class="arabic-text">{{arabic}}</p>
+    <p class="structure-name">{{tingkatKepengurusan}}</p>
+    <p class="organizations-name">LEMBAGA ITTIHADUL MUBALLIGHIN</p>
+    <p class="organizations-territory">{{daerahKepengurusan}}</p>
+  </div>
+</header>
+<div class="header-divider"></div>
